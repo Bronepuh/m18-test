@@ -1,0 +1,29 @@
+@font-face {
+  font-weight: 400;
+  font-family: "Muller";
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/2DF5B4_F_0.woff2") format("woff2"), url("../fonts/2DF5B4_F_0.woff") format("woff");
+}
+
+@font-face {
+  font-weight: 500;
+  font-family: "Muller";
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/2DF5B4_D_0.woff2") format("woff2"), url("../fonts/2DF5B4_D_0.woff") format("woff");
+}
+
+@font-face {
+  font-weight: 700;
+  font-family: "Muller";
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/2DF5B4_2_0.woff2") format("woff2"), url("../fonts/2DF5B4_2_0.woff") format("woff");
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
