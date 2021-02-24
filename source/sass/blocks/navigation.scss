@@ -1,0 +1,64 @@
+.navigation {
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+}
+
+.navigation__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  padding-top: 10px;
+  list-style: none;
+}
+
+.navigation__item {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 40px;
+}
+
+.navigation__item a {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 30px;
+  font-size: 21px;
+  line-height: 25px;
+  color: $basic-black;
+  text-decoration: none;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 24px;
+    background-image: url("../img/icon-phone.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  &:hover,
+  &:focus {
+    color: $basic-hover;
+  }
+
+  @media (max-width: $desktop-width) {
+    font-size: 0;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: -10px;
+      left: -15px;
+      width: 45px;
+      height: 45px;
+      background-size: cover;
+    }
+  }
+}
