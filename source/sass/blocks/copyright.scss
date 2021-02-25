@@ -1,0 +1,37 @@
+.copyright {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 80px;
+    width: calc(100% - 160px);
+    height: 1px;
+    background-color: $basic-grey-2;
+
+    @media (max-width: 400px) {
+      left: 40px;
+      width: calc(100% - 80px);
+    }
+  }
+}
+
+.copyright__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 1020px;
+  margin: 0 auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.copyright__link {
+  color: $basic-text;
+}
