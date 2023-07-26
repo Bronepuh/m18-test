@@ -1,0 +1,13 @@
+.vscode/**
+*.*~
+*.log
+cache
+
+!.vscode/settings.json
+
+**/node_modules
+**/build
+**/dist
+**/.vscode
+
+.husky
