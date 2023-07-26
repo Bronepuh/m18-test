@@ -1,0 +1,21 @@
+@import "~normalize.css";
+
+// FONTS
+@import "./fonts.scss";
+
+// VARIABLES
+$main-color: tomato;
+
+// INITIAL
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+// FILES
+
+@import "components/main";
+@import "components/logo";
