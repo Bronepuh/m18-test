@@ -1,0 +1,28 @@
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 250px;
+  height: 50px;
+
+  border: 1px solid $dark-red;
+
+  border-radius: 25px;
+
+  font-family: "MullerMedium", sans-serif;
+  font-size: 16px;
+  text-decoration: none;
+
+  color: $black;
+
+  &--dark-red {
+    background-color: $dark-red;
+    color: $white;
+  }
+
+  &:hover {
+    opacity: 0.9;
+    box-shadow: 4px 4px 8px 0px $dark-red;
+  }
+}

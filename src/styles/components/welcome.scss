@@ -1,0 +1,130 @@
+.welcome {
+  display: flex;
+  flex-wrap: wrap;
+
+  width: 100%;
+  height: 100vh;
+
+  padding: 20px;
+
+  border: 1px solid red;
+}
+
+.welcome__left {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+
+  width: 50%;
+  padding: 28px 86px;
+
+  @media (max-width: 800px) {
+    width: 100%;
+
+    padding: 20px;
+  }
+}
+
+.welcome__description {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  text-align: start;
+}
+
+.welcome__description-title {
+  margin: 0 0 27px 0;
+
+  font-family: "MullerMedium", sans-serif;
+  font-size: 64px;
+
+  @media (max-width: 1600px) {
+    font-size: 44px;
+  }
+
+  @media (max-width: 1200px) {
+    font-size: 34px;
+  }
+
+  @media (max-width: 1000px) {
+    font-size: 24px;
+  }
+}
+
+.welcome__description-text {
+  margin: 0 0 54px 0;
+
+  font-family: "MullerRegular", sans-serif;
+  font-size: 21px;
+
+  @media (max-width: 1600px) {
+    font-size: 18px;
+  }
+}
+
+.welcome__description-bottom {
+  display: flex;
+  align-items: center;
+
+  @media (max-width: 1200px) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+.welcome__description-subtitle {
+  margin-left: 31px;
+
+  font-family: "MullerRegular", sans-serif;
+  font-size: 16px;
+
+  color: $grey;
+
+  @media (max-width: 1200px) {
+    margin-top: 20px;
+  }
+}
+
+.welcome__link {
+  display: flex;
+  justify-content: flex-start;
+
+  width: 250px;
+  height: 30px;
+
+  font-family: "MullerMedium", sans-serif;
+  font-size: 16px;
+
+  text-decoration: none;
+  text-align: start;
+
+  color: $dark-red;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.welcome__link-img {
+  width: 41px;
+
+  margin-right: 12px;
+}
+
+.welcome__right {
+  position: relative;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
+  width: 50%;
+
+  @media (max-width: 800px) {
+    width: 100%;
+  }
+}
