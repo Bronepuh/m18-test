@@ -1,0 +1,54 @@
+.promo {
+  position: relative;
+
+  width: 100%;
+  height: 100%;
+
+  font-family: "MullerRegular", sans-serif;
+  font-size: 21px;
+}
+
+.promo__link {
+  position: absolute;
+  top: 41px;
+  right: 89px;
+
+  display: flex;
+  align-items: center;
+
+  font-family: "MullerRegular", sans-serif;
+  font-size: 21px;
+  text-decoration: none;
+  color: $black;
+
+  cursor: pointer;
+
+  &:hover {
+    color: $dark-red;
+  }
+
+  @media (max-width: 800px) {
+    top: 20px;
+    right: 20px;
+  }
+}
+
+.promo__link-img {
+  margin-right: 9px;
+}
+
+.promo__play {
+  width: 250px;
+
+  cursor: pointer;
+}
+
+.promo__play-img {
+  width: 250px;
+
+  margin-bottom: 19px;
+}
+
+.promo__play-text {
+  color: $dark-red;
+}
