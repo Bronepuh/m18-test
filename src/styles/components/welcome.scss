@@ -6,8 +6,6 @@
   height: 100vh;
 
   padding: 20px;
-
-  border: 1px solid red;
 }
 
 .welcome__left {
@@ -85,6 +83,7 @@
 
   @media (max-width: 1200px) {
     margin-top: 20px;
+    margin-left: 0;
   }
 }
 
