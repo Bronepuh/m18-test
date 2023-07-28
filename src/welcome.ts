@@ -17,7 +17,7 @@ if (welcomeLink) {
 if (promo) {
   promo.style.background = `center / cover no-repeat url(${Promo})`;
   promo.innerHTML = `
-  <a href="#" class="promo__link">
+  <a href="#footer-section" class="promo__link">
     <img class="promo__link-img" src="${Phone}">
     <span class="promo__link-text">Контакты</span>
   </a>

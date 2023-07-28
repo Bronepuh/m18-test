@@ -1,0 +1,153 @@
+.form {
+  position: relative;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+
+  max-width: 984px;
+
+  margin: 0 auto 133px auto;
+  padding: 60px 20px;
+
+  border: 4px solid $light-green;
+}
+
+.form__title {
+  margin: -85px auto 40px auto;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  font-family: "MullerMedium", sans-serif;
+  font-size: 40px;
+
+  background-color: $white;
+}
+
+.form__subtitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.form__subtitle-img {
+  width: 46px;
+  height: 69px;
+}
+
+.form__subtitle-text {
+  width: 300px;
+
+  margin: 0;
+  margin-left: 17px;
+
+  font-family: "MullerRegular", sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+
+  text-transform: uppercase;
+  text-align: start;
+}
+
+.form__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.form__list {
+  display: flex;
+  flex-wrap: wrap;
+
+  width: 100%;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.form__item {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+
+  width: 100%;
+  height: 60px;
+  margin-bottom: 30px;
+
+  span {
+    display: none;
+    position: absolute;
+    top: -6px;
+    left: 24px;
+
+    padding-left: 6px;
+    padding-right: 6px;
+
+    background-color: $white;
+
+    font-family: "MullerRegular", sans-serif;
+    font-size: 13px;
+  }
+
+  &:focus-within {
+    span {
+      display: flex;
+      color: $dark-red;
+    }
+    input::placeholder {
+      color: transparent;
+    }
+  }
+}
+
+.form__item--filled {
+  span {
+    display: flex;
+    color: $grey;
+  }
+}
+
+.form__input {
+  width: 100%;
+
+  padding-left: 25px;
+  padding-right: 25px;
+
+  outline: none;
+
+  border: 1px solid $light-grey;
+
+  border-radius: 4px;
+
+  &:focus {
+    border-color: $dark-red;
+  }
+}
+
+.form__info {
+  width: 100%;
+  margin-top: 22px;
+
+  font-family: "MullerRegular", sans-serif;
+  font-size: 13px;
+
+  color: $grey;
+}
+
+.form__policy {
+  width: 100%;
+
+  font-family: "MullerRegular", sans-serif;
+  font-size: 13px;
+
+  color: $dark-red;
+
+  text-decoration: none;
+}
